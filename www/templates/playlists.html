@@ -1,0 +1,485 @@
+<ion-view view-title="Devops">
+  <ion-content>
+    <!-- <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list> -->
+    <div class="card">
+      <div class="item item-divider">
+        <span class="num">1</span>Explain about yourself in deep Explain about your experience ?</div>
+      <div class="item item-text-wrap">
+        Myself Lokesh i have around 3+ years of experience in Devopos engineer.In my past  experience i have worked on couple of tools like vcs, I have good experience in svn and  git coming to build tools I have good experience on maven  and basic knowledge on Ant. Coming to continuous integration I have good experience on Jenkins in my past experience i have installed couple of plugins and couple of nodes for my project requirement. I have good knowledge on deployment tool chef, basic  knowledge on Rundeck.I have good experience on code review tool fisheye. I have good experience on code monitoring tool splunk. I have good knowledge on code quality tool sonar qube.I have good experience on third party repository nexus.It is used for backup the data
+      </div>
+    </div>
+    <div class="card">
+      <div class="item item-divider">
+        <span class="num">2</span>What you do in Docker deploy components or do the configuration only?</div>
+      <div class="item item-text-wrap">
+        Just I do configuration only, we create images, that Images we call from Jenkins in to Docker hub repository.Just I do configuration only, we create images, that Images we call from Jenkins in to Docker hub repository.
+      </div>
+    </div>
+    <div class="card">
+      <div class="item item-divider">
+        <span class="num">3</span>How do you create those Docker Images?</div>
+      <div class="item item-text-wrap">
+        We create images manually only, using with Docker<space> create<space> image-name along with I will pass server IP also.
+Once we create that images then we will configure that image according to my requirement like whatever configuration of java and like git whatever I want we will configure that image we will push in to repository after that using by Docker build and publish plugin in Jenkins, we are using for just calling the image from Jenkins to Docker hub repository…
+Ex: if I want to install some AWS AMI in to the cluster then we should write it inside Docker file only. That AMI version number, after that which version of java you are trying to install that we have to mention, after we have to maintenance we have to give the image ID of the your cluster after that when we trigger the job, automatically it will call the Docker file and it will access on the cluster.
+    </div>
+  </div>
+  <div class="card">
+    <div class="item item-divider">
+      <span class="num">4</span>Are you supporting production environment?</div>
+    <div class="item item-text-wrap">
+      No, till I am supporting for testing and QA I support
+  </div>
+  </div><div class="card">
+    <div class="item item-divider">
+      <span class="num">5</span>How many environments you have for support generally?</div>
+    <div class="item item-text-wrap">
+      We have 300 servers totally, we will deploy the packages to 300 servers
+We will use at a time 10 or 15 servers only, monthly around 50 servers we will deploy packages
+
+  </div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">6</span>How you deploy those packages and what you use service for deploy?</div>
+  <div class="item item-text-wrap">
+    Yes, we can automate and we do manually also. We are using the rundeck tool for deployment.That deployment tool rundeck we configured in Jenkins only. Sometimes Some deployments only we will do manually only, that we can like log in to server just we will copy the packages from the Jenkins we can do the manually. Or else we installed rundeck plugin in Jenkins only, just we will pass the parameters from the Jenkinsunder build is parameterized option, so, whatever environment I want to deploy that ip address I will pass from the test parameters in the Jenkins. So, rundeck UUID code I will create in the rundeck job, that UUID (unique universal identifier) code I will pass from the Jenkins only. That UUID code from Jenkins call to the rundeck, this action I will perform in the last stage in the build action. So, once build getting success after it will go and check the deployment phase, it will check the test server from the build other parameter option, then it will deploy the in to your text parameter.
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">7</span>Do you also do troubleshoot?</div>
+  <div class="item item-text-wrap">
+    I only troubleshoot, if any deployment is failing, if any release is failing then I only take care of that troubleshooting.
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">8</span>While deploying if some system is goes down frequently or how you troubleshoot,what you do for take care of that?</div>
+  <div class="item item-text-wrap">
+    If any machine is goes down, we can’t deploy the package,for this scenario before when I am deploying we use health check monitoring tool for the server monitoring. So, in the tool what exactly we do we will monitor the server before we do deployment. Whether server is down or up, suppose anything goes to wrong the machine is down then if I do deployment then It will go and fail the deployment in to particular server. here what exactly I will troubleshoot is I will log in to that particular server then I will check whether the service is running or not and will check CPU utilization how much memory it is currently, once it is done, suppose the server is like it is related to CPU utilization what exactly I will do is I will take the backup of the old files in particular location and I will remove the files from the particular server after that I will start deployment like that I can troubleshoot.
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">9</span>If you see null point exception in log and syntax error what will you do?</div>
+  <div class="item item-text-wrap">
+    If anything null point exception and syntax error I have to  sit with my developers, then only I will resolve the issues after that I do the again build and release and then do the deployment. If It is like related to my configure side issues whether Jenkins issue or something configuration issue I will only take care.
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">10</span>Jenkins/continues Integration overview?</div>
+  <div class="item item-text-wrap">
+    Continues integration, It is a practice that brings the code to a share repositories several times headache followed by continue testing, that reduces the time and release of the product and ensure successful delivery of the software to the production environment.
+    We are using Jenkins for continues integration, it is one most powerful continues integration tool with more than 330 plus plugins that are mainly used to build and fix the software continuously.
+
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">11</span>Sometimes the load shooting high then what you do reduce the load shooting high?</div>
+  <div class="item item-text-wrap">
+    If anything goes related to load thing I will check the servers first-step, suppose if it anything like code and related things and all I will go with my developers, I will update the like some memory issues going in the java files, so can you please pick that issues I will check with my developer.
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">12</span>How you call container in to Jenkins job?</div>
+  <div class="item item-text-wrap">
+    We just create images in the Docker, that container we will just pull from Docker hub to Jenkins file, so for that we install Docker build and publish plugin. There we will pass the exact container id and then that repository URL I will pass under repository name I should provide so, like that I can call the container in to my Jenkins job
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">13</span>The commands for Docker container?</div>
+  <div class="item item-text-wrap">
+    I have to log in sudo user only, then I will log in to Docker machine.
+Create containerdocker create --name [container-name/image-name]
+Run docker container docker run -it -d --name [container-name/image-name] bash
+Pause container docker pause [container-id/name]
+Unpause container docker unpause [container-id/name]
+Start container docker start [container-id/name]
+Stop container docker stop [container-id/name]
+To stop all at a time docker stop $(docker ps -a -q)
+Restart container docker restart [container-id/name] / docker stop {containerId} && docker start -i {containerId}
+Kill container docker kill [container-id/name]
+Destroy container docker rm [container-id/name]
+To remove all stopeed containers docker rm $(docker ps -q -f status=exited)
+
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">14</span>Do u know command for any configuration changes for Docker images in Docker container?</div>
+  <div class="item item-text-wrap">
+    Yes, for any configuration changes I have to log in to that particular image, that id using
+Docker(space)create(space)-i -d that image ID I have to give, once I log in to that particular image, then only I can change the configuration after that once I exit from the image , then we can use the
+Docker(space)start(space)-a-i and container ID I should give, like that only I can edit
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">15</span>What is Docker?</div>
+  <div class="item item-text-wrap">
+    Docker is a container management service. It is for developers to easily develop applications, ship them into containers which can then be deployed anywhere.
+    Docker has the ability to reduce the size of development by providing a smaller footprint of the operating system via containers.
+    We can deploy Docker containers anywhere, on any physical and virtual machines and even on the cloud. Docker containers are pretty lightweight, they are very easily scalable.
+    Docker Engine : It is used for building Docker images and creating Docker containers.
+    Docker Hub : This is the registry which is used to host various Docker images.
+    Docker Compose : This is used to define applications using multiple Docker containers.
+
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">16</span>Do you worked on automation?</div>
+  <div class="item item-text-wrap">
+    I worked on automation side. We implemented DevOps thing in my project, so complete architecture we implemented infrastructure, with in one check in only still deployment it will go and do the deployment, that automation we did.
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">17</span>Do you worked on Linux, what kind of work you do?</div>
+  <div class="item item-text-wrap">
+    I worked on configuration side only like creating the environments and VM’s, such kind of things I worked.
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">18</span>Do u worked on any database?</div>
+  <div class="item item-text-wrap">
+    I worked on database like MySQL only and have basic knowledge in this. Queries and all my developers will rise, only instead of doing the building they will verify in the MySQL server then I can do deploy in to the application. If anything related to shut dB and start dB I can do.
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">19</span>How many you are in team for supporting the application?</div>
+  <div class="item item-text-wrap">
+We are 4 in team, we have a lead one guy and remaining two persons associate software persons, I mean they are Juniors, very recently they joined , before they are worked on some development side, just two months before they came to devops team . We 4 people take care the application and we have environment team also, they will create the environments, sometimes Create VM’s and Linux administration things they will take care.
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">20</span>Can you work on production environment? You got any chances?</div>
+  <div class="item item-text-wrap">
+    I can work any shift also no problem for me even production environment also no problem.
+But only the thing is I didn’t get the chance to work on production environment.
+
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">21</span>Do you worked on GCP (Google cloud platform)?</div>
+  <div class="item item-text-wrap">
+    No we are using Amazon web service only, in that we use few services.
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">22</span>How you go day to day work in day? What kind of activities (day to day responsibilities)?</div>
+  <div class="item item-text-wrap">
+    Repository creation,
+Branch creation,
+Ci-job creation,
+Daily release,
+Weekly release,
+Monthly release,
+Upload package in to nexus,
+Deployment request,
+Basically we are using ticketing tool like service now. Actually my developer will rise a requests in the service now, once they rise a request to service now, we will get the mails like ticket number, what exactly request number, then once I log in to the ticket number, I come to know, that is my first step
+We have daily releases, weekly releases and monthly releases. For daily release we get minimum 3 or 4  releases , so that kind of I will take care and apart from this some days CI job creation request also will come and basically we are using the nexus tool for uploading the packages both manually and automatically , so such kind of things they will provide zip file or war file or package name they will give instead of that provide details where exactly they want to upload maven details,group id, artefact id and version according to that we will upload that and apart from this 2 or 3 requests will come from deployment side, so I will take care of the deployment side also, apart from this sometimes will get chance to go for the trainings and all like internal training we have, so sometimes I will attend that,  these kind of activities I do
+
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">23</span>You have attend concall or status call on regular basis?</div>
+  <div class="item item-text-wrap">
+Yes, we have daily status call every day at 7 p.m., we have to update each and everything to my onshore team, I mean offshore team we will take care and onshore team we have they will take care onsite team like developers and we have weekly call also, I mean weekly call is nothing but complete teams will log in to bridge call, we will discuss on the current development, next development, what is next going to release this kind of discussions we have, every Friday we have weekly call
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">24</span>Do you worked on monitoring tools, is it related to develop dashboard or otherthing?</div>
+  <div class="item item-text-wrap">
+    Yes it is health monitoring tool only, it is related to purely java, and developers make the code for that,that application developed by java team. If anything want to add newly to the application I will sit with developer only.
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">25</span>How are you optimizing your daily repeated tasks and will you do automation?</div>
+  <div class="item item-text-wrap">
+    Yes, if anything daily basis, we do automated that thing. So, we have to do daily that activity suppose we create daily releases jobs and all, on that we create templates and all, just we give the input job name and where exactly I want to deploy the package IP address, just one click only it will go and create the job, It will do build and release job and deployment, so that such kind of automation we did.
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">26</span>Are you using Integrating plugin for code coverage?</div>
+  <div class="item item-text-wrap">
+    Yes, we are using cobertura for code coverage, we just installed that plugin for code coverage, we are not supporting that plugin, just we installed in Jenkins, so, only code coverage developer only take care of these things, for code quality we are using sonar cube, this we will take care.
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">27</span>Do you worked on close to any some test environment like basic things? Do you work on automated test?</div>
+  <div class="item item-text-wrap">
+    Yes I will do smoke test, that is basic smoke test in UAE, once my up gradation is done I will do smoke test whether my application is working fine or not, if I give input then my application is working or not this such kind of smoke test I will take care, once my test is done after that I will give to test environment then they will check it again.
+QA environment tests for we have another team. There they will do the more testing and application. For automated test we integrate selenium test plug-in with Jenkins machines, that test cases provided by developers only, in the code they will write that one, that we integrated inside the Jenkins so automatically it will test the Selenium test case automatically.
+
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">28</span>What kind of challenges you have faced till now?</div>
+  <div class="item item-text-wrap">
+    Yes, recently we implemented the DevOps overview for my project, as per requirement. So, basically it is a very big task, like complete environment infrastructure with in one second only we have to automating in the single job in Jenkins, what and all steps it will perform,
+First step, once my developer will checked in the code, automatically it will pick the changes, after that it will check the code quality, it will go to build face, then it will go to release face, after that it will upload the packages in to satellite server, so from next thing once it is done after that it will go to upload packages in to nexus also, and finally once it is done deployment also perform automatically. This complete architecture we implementing in the jobs in Jenkins environment. I mean for client visit, we implemented this process after that client gave the approval for implementing the same thing into current project also. So, this complete work nearly 2months time took for me, for implementing these things. In this scenario such issues I have faced like related to compatibility issues and related to code issue and each everything it’s like a challenging work only, so, sometimes I worked with developer and sometimes I sit alone to work, so many things we automated in this concept, so now basically before doing this we are doing manually work and releases and all. Nowwe automated each and everything, once developer checked the code, automatically it will perform the all activity. So, this is my very big challenging work.
+
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">29</span>Is there any release cycle or release sheet you follow to do work?</div>
+  <div class="item item-text-wrap">
+    Yes, we are following the release sheets, the release sheet is every month developer will update the sheet, what and all they will update the sheet
+First release number they will update and then svn URL and build URL they will give and svn revision number they will give, build number they will give, current version and next development version they will provide, so, that sheet like dependency jobs we have in particular sheet,  so, what all and jobs current version they develop they will mention is yes, suppose they didn’t develop this particular release they will mention is NO, this sheet is provided by developer only, for each and every release they will provide.
+
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">30</span>Till day you have found biggest defect anything so far or any important difficulties?</div>
+  <div class="item item-text-wrap">
+    Yes, this DevOps overview only very big thing for me, like previously I didn’t get chance to work on automation side, pure manual work I am doing, so, like in six months I was like when I implementing this process, I faced very difficult like without taking any help from other people like my TL and all, so, I usually worked individually with developer, that’s why it is very big for me.
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">31</span>What about flexibility of your work and also give support on weekend?</div>
+  <div class="item item-text-wrap">
+    Yes, it is depends on the release only, whenever is going to the monthly release we have to support the weekend also some times, not a mandatory to work on each and everything, but sometimes we have to support if anything support is required for the testing team, then we have to sit with testing team, nights also we have to stay.
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">32</span>How do you check Jenkins with set up you got in locally or any other thing?</div>
+  <div class="item item-text-wrap">
+    Yes, with Warfile only, we take it from scratch, test environment I only created for the each and everything. Like vagrant we use for that setup, so, complete test environment and whatever we have we are using Citrix in the client location. So, complete things we are doing in the test environment, for that with vagrant I implemented svn and Git and each everything but, Jenkins implemented by warfile only.
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">33</span>What you comfortable level with java scripting and managing development side?</div>
+  <div class="item item-text-wrap">
+    I’m comfortable like once developer give whatever gain test cases whatever that sql DB’s and all I will just keep files in to my backend server then I will run. That kind of knowledge I have. Not development side, I don’t have knowledge on my sql and development.
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">34</span>How comfortable are you with EC2?</div>
+  <div class="item item-text-wrap">
+    I have basic knowledge on EC2, from past six month only we started working on Amazon Web Services.
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">35</span>What is security groups in EC2?</div>
+  <div class="item item-text-wrap">
+    a security group control the inbound traffic that's allowed to reach the instances that are associated with the security group and the outbound traffic that's allowed to leave them.
+•	By default, security groups allow all outbound traffic.
+•	You can't change the outbound rules for an EC2-Classic security group.
+•	Security group rules are always permissive; you can't create rules that deny access.
+•	Security groups are stateful — if you send a request from your instance, the response traffic for that request is allowed to flow in regardless of inbound security group rules. For VPC security groups, this also means that responses to allowed inbound traffic are allowed to flow out, regardless of outbound rules.
+
+Security group we create whenever we launching the instances, and whenever we create your users in the IIM there first we will check the what and all permissions that particular user having and then that particular user you can configure in to your security group, so  what kind of like. Your security group you will add in to that particular user in the group session, later it will go to next stage. So, this purpose we are using, these are access management things.
+
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">36</span>In operating systems do you use Ubuntu or RedHat?</div>
+  <div class="item item-text-wrap">
+    We are using RedHat only, RedHat 4 and 6 only we use. Rel4 and rel6
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">37</span>What are the way secure a directory in Linux and how can you secure a folder in Linux?</div>
+  <div class="item item-text-wrap">
+    Using ls –lart command it will give the information of your files permission and that particular folders and files complete information it will give. After that if you want to provide any restricts to the people we can use the CHMOD 777 and then file name by the time you can give at a time read and write and executable access you can give, suppose if you want to give only read access then you can use the CHMOD 400 and filename you should give then in this way we can check and we can provide the access to the people.
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">38</span>How can you control hacking access control firewall in Linux and what is the command?</div>
+  <div class="item item-text-wrap">
+    Using netstat command we can see what the services are is running on particular port. By default, netstat displays a list of open sockets. It is a network utility tool that displays network connections for the Transmission Control Protocol, routing tables, and a number of network interface and network protocol statistics.
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">39</span>What is the command you use for replace the string or some characters in a file in Linux?</div>
+  <div class="item item-text-wrap">
+    Using stream Editor (Sed) we can replace.
+
+    Sed(space)-I(space) ‘s/old-text/new-text/g’ input.txt
+
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">40</span>Difference between tag and branch in subversion?</div>
+  <div class="item item-text-wrap">
+    Branch is nothing but whenever you are doing the development and starting initial stage whenever the developer develop the source code in particular branching so, likewe have different branches like devbranches, bug fix branches, hotfix branches, these are based the requirement. Suppose consider me I am working on development, complete development I will do build in the branches, once it is done I will rise a request to create continues integrations to the job then I can build the code that is the branching.
+Coming to tag, so our Jenkins job getting success every release we are taking backup for the future reference, so whenever issue is happening in the particular version in future reference I will back up for future things, suppose anything issues happen I don’t want to touch my code in the branches I will take only from tag. So, we are using the tags for taking the backup purpose, this is the main difference between the branch and tag. So usually in the branching we have different strategies we are following, so in my organization we are using branch, tag, trunk strategies we are using.  So, main development we are going to do in trunk and branches is nothing but we are maintaining the original source code.
+
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">41</span>What is the command you are using a make the branch AND tag?</div>
+  <div class="item item-text-wrap">
+    We are using svn(space)copy(space) your branch name and branch link you have to give.
+Manually if you want to create tag folder we can use svn(space)mkdir(space)tag link you can give, otherwise in Jenkins configuration, we can click the perform maven option there we will get automatic tag creation.
+
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">42</span>Are you comfortable with any type of scripting like shell… and what you have done?</div>
+  <div class="item item-text-wrap">
+    I did basic scripts only, like deploying packages from the Jenkins server to your deployment, tool rundeck we are using and test servers we are using for the deployment. So, in that I written to the scripts to deploy the packages, so, how it will work is, first it will take the source code from the Jenkins and then whatever test message we will pass from the Jenkins it will go and deploy the test messages. These kind of script I written.
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">43</span>What are the tools you use to control the building, development building, packaging and from scratch to still deployment complete end scenario explain?</div>
+  <div class="item item-text-wrap">
+    I will come to my head like something new requirement, complete DevOps structure in to project, and for this process first I will start version control system.
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">44</span>How would you create pipeline and how you check in entire view of branching?</div>
+  <div class="item item-text-wrap">
+    For that situation I will install build pipeline plug in Jenkins,let us consider 3 branches I have like example1, example2, example3 branches I have. So what I will do, my developer will develop the source code in three branches, so meanwhile what I will do, I install the pipeline plugin in to my jenkins dashboard later I create 3 different jobs, like ci-src-example1, ci- src-example2 I will create 2 jobs, what I will do is I will integrate that 3 branches to 3 different jobs, next I will go to particular configuration there I go to post build action, build parameterized on other project option is there, there I will give the suppose the example1 job open example2 name I configure in to example1 job, similarly I will configure example3 job in example2 job.
+Once it is done, when you refresh this job when it looks like it is
+If you pen the example1 it will show the downstream job as the example2
+And if you go to example2 job there you refresh the job you can see upstream project is example1 and downstream project is example3
+After that if you open example3 job just refresh it you can see upstream is example2 job only.
+Once my configuration is done in pipeline process, exactly what I do is I will configure pipeline view, so in that I select the initial option where I want to do start the building. In that situation I will configure the job name example1 if I want to start first branch, then I will give that only. After I save the build pipeline view, finally once check in the source code automatically 3jobs will trigger whatever you configured. This is the concept I choose to pipeline view.
+
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">45</span>How many types of source control tools are there and what is difference between them?</div>
+  <div class="item item-text-wrap">
+    We have cvs, svn and Git tools for source control tools, apart from this I worked purely on svn, recently I started career in Git also. In svn we are following different branching strategies, so how we will work on is follow different strategies like branch, tag, trunk we will create in repository.
+In trunk we are maintaining original source code of the particular version, according to developer requirement we are creating the branches like development branch, bug fix branch, sometimes developer will tell me to create temporary branches like hotfix branches, so then I will create temporary branches also,
+Coming to purpose of the tags is we are taking back up of the future releases purpose if anything issues are happen in to my revision, I will take the back up in to my tags folder in t svn. (Once Jenkins jobs getting success then I will take the backup of the particular version)
+I can’t review the code before Commit in to svn, but in Git we can review the code. In git we use merge option from branch to branch and sometimes we use merge revision number to revision number like 1600 to 2000 and sometimes we are using merge folder to folder also.
+
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">46</span>Why do we need branching, why do we do?</div>
+  <div class="item item-text-wrap">
+    Yes, while development stage, we will create the standard branching for different different requirement. So usually in development stage suppose, already u have developed some version, you were released that version in to your jenkins, later may be after releasing the particular version to the customer, then may be issue will happen in 2 or 3 months, in that scenario no need to go to standard branch and all, so what we are doing is we will create the separate branches for only fixing the issues of the particular version. Suppose we got the error in version 1.0 what I will do is that standard branch only I will create one more branch like bugfix branch, in that I will check out source code from standard branch, I will fix and then I will release package to the customer. So this is one scenario,
+Suppose one version I released recently, it is under the testing, if I want to add something little bit code to that existing version, in that scenario what I have to do then I will create the separate branch for the temporary storage purpose, fix branch I will create in the branches.
+Once my activity is done, I will delete the particular branch. So these kind of scenarios I will use the branching.
+
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">47</span>Which one did u like Git or svn, explain it?</div>
+  <div class="item item-text-wrap">
+    Recently I started Git, Compare to Git I like Git, because there is no branching strategy, directly we will interact with master only,  we will create in master branch only, we will pull the code and all this kind of activities.
+I can’t review the code before Commit in to svn, but in Git we can review the code. In git we use merge option from branch to branch and sometimes we use merge revision number to revision number like 1600 to 2000 and sometimes we are using merge folder to folder also.
+
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">48</span>Explain about Maven life cycle?</div>
+  <div class="item item-text-wrap">
+    Usually maven life cycle is whenever we are in development stage once my development is done what I will do is I will complete building purpose I will use maven. In life cycle we have different different stages like when we development stage to and then complete deployment stage we have a particular stages.
+First stage is validate, whenever we develop the source code then it will validate the complete code, once it is validated after it will go to compile stage (MVN<>compiler), after compiling the source code what we have to do is it will test that code after it is done then it will go to packaging stage (MVN<>Package) like it will packaging the source code after that once packaging done then it will go to verifying the package. After that if I want to install the packages then I can use the install next stage. Once install is done it will go directly to deployment (MVN(space)Deploy). So this is complete step by step the complete maven life cycle.
+
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">49</span>Have you contributed to install any plugin in Jenkins?</div>
+  <div class="item item-text-wrap">
+    Yes I have installed so many plugin like very recently I installed embeddable build status plugin and Docker plugin I have installed in Jenkins box and green ball plugin. So many plugin I have installed.
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">50</span>If I want to schedule a job in Jenkins, how many ways you do?</div>
+  <div class="item item-text-wrap">
+    We can do in two ways, whenever our developer wants to check in the source code in to svn, if you want to automate the process, what you have to do is we use poll SCM in Jenkins. For schedule the job purpose We give crone format in poll SCM in jenkins, according to my requirement checked in the source code in to my svn repository if I want to build next second only, what I will do is I will give the poll SCM tag like five stars, then whenever source code check in to svn repository automatically It will trigger the build. Based up on that requirement I will change the crone in to poll SCM in Jenkins, the same way
+If I want to use the build periodically for schedule job is there in Jenkins, so how it will work is  if you didn’t change the code in to svn repository, automatically build need to be trigger this also based up on the requirement we use this option. So two ways we can pass the option.
+
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">51</span>How do you create EC2 instances?</div>
+  <div class="item item-text-wrap">
+    Usually whenever we want to create instance first step we have to like let us know which environment we want to create like Linux environment or windows environment, based on this we have to create.
+We required the location where exactly we want to create, based up on these two things what we will do is we will go to EC2 service, then launch the EC2 instances which I have to create,  later security groups we have to provide as per requirement in to our environment.
+When we are creating the instances we have to select VPC also which public IP you want to select, that also you have to enable the public stage after that if I want to activate the tags also like sshp rules if I want to pass I will pass the rules also. Later once it is done I will select the my PPK file in to my instances later I will launch the instance, once I launch instances I have to log in to particular instances, this is the like Linux configuration
+If I want to create the windows environment based up on the requirement we have to select windows instances in the EC2 instances.
+
+</div>
+</div><div class="card">
+  <div class="item item-divider">
+    <span class="num">52</span>If I want to upgrade the EC2 instance to existing instance then what you do?</div>
+  <div class="item item-text-wrap">
+    Actually I never worked on this activity, but I have knowledge on this
+First step we have to take the backup of the particular which instance you want to upgrade in to next level, so first AMI we have to backup in to particular poll instance after that you can upgrade in to latest version of the your instance.
+
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">53</span>How much IOU involved in customized Docker images?</div>
+  <div class="item item-text-wrap">
+    What exactly I do whenever the developer create Docker file they will keep the file in to M2 repository, I will push the code from maven to Jenkins and the image I will build then I will upload the image in to ECS. That configuration I did in the Docker. In the senesce like AWS we integrated with Jenkins.
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">54</span>Are you involved pulling the images and uploading in to diff servers and setting up the images configuration creation?</div>
+  <div class="item item-text-wrap">
+    Sometimes I will only configure the image file, Docker file also I can create. Instead of the Master slave configuration in Jenkins, we are using to the Docker image to configure the servers like we are using the deployment tool rundeck, so we configure rundeck inside the Docker image only, first that image we configure inside the Jenkins, so whenever we require the deployment that image we are calling from the Jenkins using the Docker build and publish plugin. According to the details whatever repository I am using in the Docker that details we   pass from the Jenkins only, so like that requirement I worked.
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">55</span>Do you have experience in virtualization environment?</div>
+  <div class="item item-text-wrap">
+    No, Linux I worked, I mean we are using centos.
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">56</span>	What is your role and work experience on the cloud?</div>
+  <div class="item item-text-wrap">
+    Basically cloud requirement is my developer will rise a requirements to create EC2 infrastructure using Terraform. I mean with details provided by developer only. According to that I will write Terraform script, in the Terraform script what and all requirements they require like instances type and availability zone and security group and AMI and everything should pass from Terraform only, if you run the Terraform script automatically that instance will create, once I created that instance, what the developer will do is they will use instances for their requirement, they will check in to source code in to particular instances, after that according to my requirement whatever  code they develop, ECS service we are using Docker file, so this code and Docker file we will set up in to my Jenkins machine only, so what exactly we do is maven we are using the build tool, whatever slave machine we are using in the Jenkins, whatever code we have that developer develop that we will keep inside the .m2 repository. After that what exactly I will do is that Git repository we are using version controlling as Git, that URL I should pass from the Jenkins only, then trigger the build.
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">57</span>In build system, how are they executed in the machine in sequential or parallel?</div>
+  <div class="item item-text-wrap">
+    Sequential only, we are using the pipeline method for each and every job, so we integrate the according to the pipeline structure, so one job is created for the build, after that it will go to deployment, finally it will go to test environment. So these three pipeline I have been configured.
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">58</span>What is the duration of the automation of build test?</div>
+  <div class="item item-text-wrap">
+    It will take 2 or 3 hours on according to the test cases.
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">59</span>What is the duration of the testing?</div>
+  <div class="item item-text-wrap">
+    We will give one day for the testing.
+</div>
+</div>
+<div class="card">
+  <div class="item item-divider">
+    <span class="num">60</span>How many test cases are there?</div>
+  <div class="item item-text-wrap">
+    We configured nearly 10 test cases per one day.
+</div>
+</div>
+  </ion-content>
+</ion-view>

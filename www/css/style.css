@@ -1,0 +1,30 @@
+/* Empty. Add your own CSS if you like */
+
+.item{
+  white-space: normal;
+  font-size: 13px;
+  text-align: justify;
+  padding: 7px;
+}
+/* .font{
+  color: red;
+  padding: 5px;
+  margin: 5px;
+background-color: lightblue;
+font-size: 14px;
+} */
+
+.num {
+  margin: 1px 3px;
+  border: 1px;
+  padding: 2px 8px;
+  background-color: blue;
+  color: #fff;
+  border-radius: 10px 5px;
+}
+.menu{
+  padding: 0;
+}
+.bar .title.title-left{
+  left: 35% !important; 
+}
